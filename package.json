@@ -1,0 +1,61 @@
+{
+  "name": "record_vue",
+  "sideEffects": [
+    "./src/public/public.css"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p server:dev client:dev",
+    "server:start": "node --inspect=127.0.0.1:9229 server",
+    "server:dev": "webpack --mode development --env server",
+    "client:dev": "webpack --mode development --env client",
+    "client:prod": "webpack --mode production --env client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^8.0.0",
+    "element-ui": "^2.10.1",
+    "koa": "^2.7.0",
+    "koa-static": "^5.0.0",
+    "node-fetch": "^2.6.0",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.11.2",
+    "vue-router": "^3.0.7",
+    "vue-server-renderer": "^2.6.10",
+    "vuex": "^3.1.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-component": "^1.1.1",
+    "css-loader": "^3.0.0",
+    "eslint": "^6.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "url-loader": "^2.0.1",
+    "vue-eslint-parser": "^6.0.4",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.38.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.4",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2",
+    "yargs-parser": "^13.1.1"
+  }
+}
